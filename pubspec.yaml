@@ -1,0 +1,48 @@
+name: plant_recogniser
+
+description: Plant recogniser in Flutter using TensorFlow Lite
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  tflite_flutter: ^0.9.1
+  image_picker: ^0.8.7+1
+  collection: ^1.17.0
+  image: ^3.0.2
+  tflite_flutter_helper:
+    git:
+      url: https://github.com/filofan1/tflite_flutter_helper.git
+      ref: 783f15e5a87126159147d8ea30b98eea9207ac70
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  fonts:
+    - family: SquadaOne
+      fonts:
+        - asset: assets/SquadaOne-Regular.ttf
+    - family: ContrailOne
+      fonts:
+        - asset: assets/ContrailOne-Regular.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/Roboto-Light.ttf
+
+  assets:
+    - assets/
